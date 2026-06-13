@@ -3,17 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ | Gashena Foreign Employment Agent</title>
+    <title>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ | Gashena Foreign Employment</title>
     <style>
-        /* Global Styles */
-        :root {
-            --primary-color: #1E3A8A; /* Deep Blue */
-            --secondary-color: #D97706; /* Amber/Gold */
-            --text-dark: #1F2937;
-            --text-light: #F9FAFB;
-            --bg-light: #F3F4F6;
-        }
-
+        /* General Styles */
         * {
             margin: 0;
             padding: 0;
@@ -22,34 +14,43 @@
         }
 
         body {
-            color: var(--text-dark);
-            background-color: var(--bg-light);
+            color: #333;
             line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
         }
 
         /* Header & Navigation */
         header {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background-color: #0d3b66;
+            color: #fff;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .logo h1 {
             font-size: 1.5rem;
-            color: var(--text-light);
+            color: #f4d35e;
         }
 
-        .logo span {
-            color: var(--secondary-color);
-            font-size: 0.9rem;
-            display: block;
+        .logo p {
+            font-size: 0.85rem;
+            opacity: 0.9;
         }
 
         nav ul {
@@ -62,254 +63,225 @@
         }
 
         nav ul li a {
-            color: var(--text-light);
+            color: #fff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: var(--secondary-color);
+            color: #f4d35e;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1521737711867-e3b90473bd58?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
-            color: var(--text-light);
-            padding: 80px 5%;
+            background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85)), url('https://images.unsplash.com/photo-1521737711867-e3b904737372?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: #fff;
+            height: 60vh;
+            display: flex;
+            align-items: center;
             text-align: center;
         }
 
-        .hero h2 {
+        .hero-content h2 {
             font-size: 2.5rem;
             margin-bottom: 15px;
+            color: #f4d35e;
         }
 
-        .hero p {
+        .hero-content p {
             font-size: 1.2rem;
             max-width: 800px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 25px auto;
         }
 
         .btn {
-            background-color: var(--secondary-color);
-            color: var(--text-light);
+            display: inline-block;
+            background-color: #ee964b;
+            color: #fff;
             padding: 12px 30px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
             transition: background 0.3s;
-            display: inline-block;
         }
 
         .btn:hover {
-            background-color: #B45309;
+            background-color: #f4d35e;
+            color: #0d3b66;
         }
 
-        /* Main Content Grid */
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
+        /* Info Section */
+        .info-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h3 {
+            font-size: 2rem;
+            color: #0d3b66;
+            margin-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #ee964b;
+            margin: 0 auto;
+        }
+
+        .grid {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
+        .card {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #0d3b66;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .card h4 {
+            color: #0d3b66;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .card ul li strong {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d3b66;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-            header {
+            .nav-container {
                 flex-direction: column;
                 text-align: center;
             }
             nav ul {
                 margin-top: 15px;
             }
-        }
-
-        /* Cards & Sections */
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 25px;
-        }
-
-        .card h3 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--bg-light);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
-        }
-
-        /* License Details List */
-        .details-list {
-            list-style: none;
-        }
-
-        .details-list li {
-            padding: 12px 0;
-            border-bottom: 1px dashed #E5E7EB;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .details-list li:last-child {
-            border: none;
-        }
-
-        .details-list strong {
-            color: #4B5563;
-        }
-
-        /* Badge/Status */
-        .badge {
-            background-color: #10B981;
-            color: white;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        /* Notification Box */
-        .notification-box {
-            background-color: #FEF3C7;
-            border-left: 4px solid var(--secondary-color);
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 0 4px 4px 0;
-        }
-
-        .notification-box h4 {
-            color: #92400E;
-            margin-bottom: 5px;
-        }
-
-        .notification-box ul {
-            padding-left: 20px;
-            font-size: 0.9rem;
-            color: #78350F;
-        }
-
-        /* Contact Sidebar */
-        .sidebar .card {
-            background-color: var(--primary-color);
-            color: var(--text-light);
-        }
-
-        .sidebar h3 {
-            color: var(--text-light);
-            border-bottom-color: rgba(255,255,255,0.1);
-        }
-
-        .contact-link {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-            font-size: 1.1rem;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #111827;
-            color: #9CA3AF;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 0.9rem;
+            nav ul li {
+                margin: 0 10px;
+            }
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <h1>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ</h1>
-            <span>GASHENA FOREIGN EMPLOYMENT AGENT</span>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ</h1>
+                <p>Gashena Foreign Employment Agent</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">ዋና ገጽ</a></li>
+                    <li><a href="#about">ስለ እኛ</a></li>
+                    <li><a href="#contact">አድራሻ</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">ስለ እኛ</a></li>
-                <li><a href="#license">ህጋዊ ፈቃድ</a></li>
-                <li><a href="#contact">አድራሻ</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h2>ታማኝ እና ህጋዊ የውጭ ሀገር የስራ ስምሪት አገልግሎት</h2>
-        <p>በኢፌዴሪ የሥራና ክህሎት ሚኒስቴር ሙሉ እውቅና እና የብቃት ማረጋገጫ ፈቃድ የተሰጠው ህጋዊ ወኪልዎ።</p>
-        <a href="#contact" class="btn">ያግኙን / Contact Us</a>
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2>ህጋዊና ታማኝ የውጭ ሀገር የሥራ ስምሪት!</h2>
+            <p>በሥራና ክህሎት ሚኒስቴር ዕውቅና እና ፈቃድ የተሰጠው ኤጀንሲችን ወደ ሳውዲ ዓረቢያ አስተማማኝ የሥራ ዕድሎችን ያመቻቻል።</p>
+            <a href="mailto:gashena02@gmail.com" class="btn">ያነጋግሩን</a>
+        </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        
-        <!-- Left Column: Main Info -->
-        <main>
-            <section id="about" class="card">
-                <h3>ስለ ወኪሉ / About Our Agency</h3>
-                <p>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ ኤጀንሲ በኢትዮጵያ የውጪ አገር ሥራ ሥምሪት አዋጅ ቁጥር 923/2008 እና 1246/2013 መሠረት የተቋቋመ ህጋዊ ኤጀንሲ ነው። ብቁ እና ስልጠና ያላቸውን ሰራተኞች በህጋዊ መንገድ በማዘጋጀት ወደ ሳውዲ ዓረቢያ ሀገር በታማኝነት እና በሃላፊነት ያሰማራል።</p>
-            </section>
-
-            <section id="license" class="card">
-                <h3>የብቃት ማረጋገጫ ፈቃድ መረጃ / Official License Details</h3>
-                <ul class="details-list">
-                    <li><strong>የፈቃድ ቁጥር (License No.):</strong> <span>LIC0000004880 <span class="badge">Active</span></span></li>
-                    <li><strong>የባለቤት/ስራ አስኪያጅ ስም:</strong> <span>ጅብሪል ያሲን (JBRIL Yasin)</span></li>
-                    <li><strong>የተሰጠበት ቀን (Issuance Date):</strong> <span>12/10/2017 ዓ.ም (19/06/2025 G.C.)</span></li>
-                    <li><strong>የሚያበቃበት ቀን (Valid Until):</strong> <span>13/12/2018 ዓ.ም (19/08/2026 G.C.)</span></li>
-                    <li><strong>የስራ ስምሪት ሀገር (Destination):</strong> <span>ሳውዲ ዓረቢያ (Saudi Arabia)</span></li>
-                </ul>
-
-                <div class="notification-box">
-                    <h4>⚠️ ማሳሰቢያ (Important Notice)</h4>
+    <!-- Main Information Section -->
+    <section class="info-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h3>የኤጀንሲው መረጃዎች</h3>
+                <p>በሰነድ LMIS(132).PDF ማጣቀሻ ላይ የተመሠረተ ህጋዊ መረጃ</p>
+            </div>
+            
+            <div class="grid">
+                <!-- License details -->
+                <div class="card">
+                    <h4>የብቃት ማረጋገጫ ፈቃድ</h4>
                     <ul>
-                        <li>ይህ ኤጀንሲ ሰራተኛ መላክ የሚችለው ፈቃድ በተሰጠበት ሀገር (በሳውዲ ዓረቢያ) ብቻ ነው።</li>
-                        <li>ይህ የብቃት ማረጋገጫ ፈቃድ በህግ የተጠበቀ እና ለሌላ ሰው የማይተላለፍ ነው።</li>
+                        <li><strong>የፈቃድ ቁጥር:</strong> LIC0000004880</li>
+                        <li><strong>የተሰጠበት ቀን:</strong> 12/10/2017 ዓ.ም (19/06/2025 G.C.)</li>
+                        <li><strong>የሚያበቃበት ቀን:</strong> 13/12/2018 ዓ.ም (19/08/2026 G.C.)</li>
+                        <li><strong>የማረጋገጫ አዋጅ:</strong> ቁጥር 923/2008 እና 1246/2013</li>
                     </ul>
                 </div>
-            </section>
-        </main>
 
-        <!-- Right Column: Sidebar Contact -->
-        <aside class="sidebar" id="contact">
-            <div class="card">
-                <h3>ፈጣን መገናኛ</h3>
-                <p style="margin-bottom: 15px; font-size: 0.95rem;">ለማንኛውም አይነት ጥያቄ ወይም ህጋዊ የስራ ስምሪት ምዝገባ በነዚህ አድራሻዎች ያግኙን፦</p>
-                
-                <p><strong>ስልክ ቁጥር:</strong></p>
-                <a href="tel:99924046147" class="contact-link">+999 24046147</a>
-                
-                <br>
-                <p><strong>ኢሜይል አድራሻ:</strong></p>
-                <a href="mailto:gashena02@gmail.com" class="contact-link" style="font-size: 1rem;">gashena02@gmail.com</a>
-                
-                <br>
-                <p><strong>አድራሻ:</strong></p>
-                <p style="font-size: 0.9rem; color: #E5E7EB; margin-top: 5px;">ወረዳ 2፣ የቤት ቁጥር: NOT FOUND</p>
+                <!-- Operations -->
+                <div class="card">
+                    <h4>የሥራ መስክና መዳረሻ</h4>
+                    <ul>
+                        <li><strong>ሥራ አስኪያጅ:</strong> ጅብሪል ያሲን (Jibril Yasin)</li>
+                        <li><strong>የስምሪት አገር:</strong> ሳውዲ ዓረቢያ (Saudi Arabia)</li>
+                        <li><strong>አገልግሎት:</strong> ህጋዊ የውጭ ሀገር ሥራና ሠራተኛ ማገናኘት</li>
+                    </ul>
+                </div>
+
+                <!-- Contact details -->
+                <div class="card" id="contact">
+                    <h4>የመገናኛ አድራሻ</h4>
+                    <ul>
+                        <li><strong>ኢሜይል:</strong> gashena02@gmail.com</li>
+                        <li><strong>ስልክ ቁጥር:</strong> +99924046147</li>
+                        <li><strong>ወረዳ:</strong> 2</li>
+                    </ul>
+                </div>
             </div>
-        </aside>
-
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ (Gashena Foreign Employment Agent). All Rights Reserved.</p>
-        <p style="font-size: 0.75rem; margin-top: 5px; color: #6B7280;">Licensed by Ministry of Labor and Skills (LMIS(132).PDF)</p>
+        <div class="container">
+            <p>&copy; 2026 ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ ኤጀንሲ። መብቱ በህግ የተጠበቀ ነው።</p>
+        </div>
     </footer>
 
 </body>
