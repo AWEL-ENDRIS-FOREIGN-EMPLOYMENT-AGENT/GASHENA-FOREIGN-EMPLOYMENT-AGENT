@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="am">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ | Gashena Foreign Employment</title>
+    <title>Gashena Foreign Employment Agent</title>
     <style>
         /* General Styles */
         * {
@@ -46,6 +45,8 @@
         .logo h1 {
             font-size: 1.5rem;
             color: #f4d35e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .logo p {
@@ -156,6 +157,7 @@
             color: #0d3b66;
             margin-bottom: 15px;
             font-size: 1.2rem;
+            text-transform: uppercase;
         }
 
         .card ul {
@@ -212,14 +214,14 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <h1>ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ</h1>
-                <p>Gashena Foreign Employment Agent</p>
+                <h1>Gashena Foreign Employment</h1>[cite: 1]
+                <p>Private Overseas Employment Agency</p>[cite: 1]
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">ዋና ገጽ</a></li>
-                    <li><a href="#about">ስለ እኛ</a></li>
-                    <li><a href="#contact">አድራሻ</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -228,9 +230,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h2>ህጋዊና ታማኝ የውጭ ሀገር የሥራ ስምሪት!</h2>
-            <p>በሥራና ክህሎት ሚኒስቴር ዕውቅና እና ፈቃድ የተሰጠው ኤጀንሲችን ወደ ሳውዲ ዓረቢያ አስተማማኝ የሥራ ዕድሎችን ያመቻቻል።</p>
-            <a href="mailto:gashena02@gmail.com" class="btn">ያነጋግሩን</a>
+            <h2>Legal & Trusted Overseas Recruitment</h2>
+            <p>Fully licensed by the Ministry of Labor and Skills to provide reliable, professional employment deployment services to Saudi Arabia.</p>[cite: 1]
+            <a href="mailto:gashena02@gmail.com" class="btn">Contact Us</a>
         </div>
     </section>
 
@@ -238,39 +240,37 @@
     <section class="info-section" id="about">
         <div class="container">
             <div class="section-title">
-                <h3>የኤጀንሲው መረጃዎች</h3>
-                <p>በሰነድ LMIS(132).PDF ማጣቀሻ ላይ የተመሠረተ ህጋዊ መረጃ</p>
+                <h3>Agency Verification & Details</h3>
+                <p>Official credentials referenced from document LMIS(132).PDF</p>
             </div>
             
             <div class="grid">
                 <!-- License details -->
                 <div class="card">
-                    <h4>የብቃት ማረጋገጫ ፈቃድ</h4>
+                    <h4>License Competency</h4>
                     <ul>
-                        <li><strong>የፈቃድ ቁጥር:</strong> LIC0000004880</li>
-                        <li><strong>የተሰጠበት ቀን:</strong> 12/10/2017 ዓ.ም (19/06/2025 G.C.)</li>
-                        <li><strong>የሚያበቃበት ቀን:</strong> 13/12/2018 ዓ.ም (19/08/2026 G.C.)</li>
-                        <li><strong>የማረጋገጫ አዋጅ:</strong> ቁጥር 923/2008 እና 1246/2013</li>
+                        <li><strong>License No:</strong> LIC0000004880</li>[cite: 1]
+                        <li><strong>Proclamation No:</strong> 923/2016 & 1246/2021</li>[cite: 1]
                     </ul>
                 </div>
 
                 <!-- Operations -->
                 <div class="card">
-                    <h4>የሥራ መስክና መዳረሻ</h4>
+                    <h4>Agency Profile</h4>
                     <ul>
-                        <li><strong>ሥራ አስኪያጅ:</strong> ጅብሪል ያሲን (Jibril Yasin)</li>
-                        <li><strong>የስምሪት አገር:</strong> ሳውዲ ዓረቢያ (Saudi Arabia)</li>
-                        <li><strong>አገልግሎት:</strong> ህጋዊ የውጭ ሀገር ሥራና ሠራተኛ ማገናኘት</li>
+                        <li><strong>Owner/Manager:</strong> Jbril Yasin</li>[cite: 1]
+                        <li><strong>Country of Destination:</strong> Saudi Arabia</li>[cite: 1]
+                        <li><strong>Core Service:</strong> Legal Overseas Recruitment & Placement</li>[cite: 1]
                     </ul>
                 </div>
 
                 <!-- Contact details -->
                 <div class="card" id="contact">
-                    <h4>የመገናኛ አድራሻ</h4>
+                    <h4>Contact Info</h4>
                     <ul>
-                        <li><strong>ኢሜይል:</strong> gashena02@gmail.com</li>
-                        <li><strong>ስልክ ቁጥር:</strong> +99924046147</li>
-                        <li><strong>ወረዳ:</strong> 2</li>
+                        <li><strong>Official Email:</strong> gashena02@gmail.com</li>
+                        <li><strong>Phone Number:</strong> +99924046147</li>[cite: 1]
+                        <li><strong>Office Address:</strong> Woreda 2</li>[cite: 1]
                     </ul>
                 </div>
             </div>
@@ -280,7 +280,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 ጋሸና በዉጭ ሃገር ስራና ሰራተኛ አገናኝ ኤጀንሲ። መብቱ በህግ የተጠበቀ ነው።</p>
+            <p>&copy; 2026 Gashena Foreign Employment Agent. All Rights Reserved.</p>
         </div>
     </footer>
 
